@@ -11,7 +11,7 @@ services:
         volumes:
             - ./config:/config
             - ./_data/consul:/consul/data
-        command: agent -server -log-level info -bind 0.0.0.0 -client 0.0.0.0 -bootstrap-expect=1
+        command: agent -server -ui -log-level info -bind 0.0.0.0 -client 0.0.0.0 -bootstrap-expect=1
 
     vault:
         container_name: vault
