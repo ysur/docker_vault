@@ -4,7 +4,7 @@ case ${answer:0:1} in
     y|Y )
         echo "[*] Removing files..."
         echo "[+] Removing: ./_data/consul/"
-        rm -rf ./_data/consul/
+        sudo rm -rf ./_data/consul/
         echo "[+] Removing: ./_data/backup/"
 		rm -rf ./_data/backup/
 		echo "[+] Removing: ./_data/keys.txt"
