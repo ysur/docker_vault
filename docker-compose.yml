@@ -1,4 +1,5 @@
-version: '2'
+# Support of setting environment for docker-compose exec
+version: '2.2'
 
 services:    
     consul:

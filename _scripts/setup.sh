@@ -1,7 +1,7 @@
 ## CONFIG LOCAL ENV
 echo "[*] Config local environment..."
-alias vault='docker-compose exec vault vault "$@"'
 export VAULT_ADDR=http://127.0.0.1:8200
+alias vault="docker-compose --no-ansi exec -e VAULT_CLI_NO_COLOR=1 -e VAULT_ADDR=$VAULT_ADDR vault vault \"\$@\""
 
 ## INIT VAULT
 echo "[*] Init vault..."
